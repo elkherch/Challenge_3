@@ -1,6 +1,8 @@
-from django.http import HttpResponse, JsonResponse
-from django.views.decorators.csrf import csrf_exempt
+from django.shortcuts import render
 
-@csrf_exempt
+# Create your views here.
+from django.http import HttpResponse
+
 def index(request):
-    return JsonResponse({'response': "teste"})
+
+ return HttpResponse("Hello world!")
